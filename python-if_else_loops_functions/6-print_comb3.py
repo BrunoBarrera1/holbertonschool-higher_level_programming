@@ -7,3 +7,4 @@ for i in range(10):
             print(f"{i}{j}")
         else:
             print("{}{}".format(i, j), end=", ")
+            
