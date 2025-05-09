@@ -7,5 +7,3 @@ for i in range(10):
                 print("{}{}".format(i, j), end="\n")
             else:
                 print("{}{}".format(i, j), end=", ")
-                
-                #BASTA
