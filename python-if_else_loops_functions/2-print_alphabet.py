@@ -1,5 +1,2 @@
 #!/usr/bin/python3
-
-ascii_list = [chr(letter) for letter in range(ord('a'), ord('z') + 1)]
-
-print(ascii_list)
+print("{}".format("".join(chr(i) for i in range(97, 123))), end="")
