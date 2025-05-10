@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 def uppercasae(str):
-    lowercase_string = "abcdefghijklmnopqrstuvwxyz"
-    uppercase_string = lowercase_string.upper()
-
-    print(uppercase_string)
+    for c in str:
+        if ord(c) >= ord('a') and ord(c) <= ord('z'):
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
+    print("")
