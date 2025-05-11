@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+no = "e"
+no1 = "q"
 for juan in range (97, 123):
-
-    if juan not in ord('q'), ord('e')):
-        print(f"{chr(juan)}", end="")
+    character = chr(juan)
+    if juan != no and juan 1= no1:
+        print(juan, end="".format(juan))
