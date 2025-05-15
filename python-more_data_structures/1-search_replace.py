@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    for index, item in enumerate(my_list):
-        if item == search:
-            my_list[index] = replace
+    return list(map(lambda x: replace if x == search else x, my_list))
