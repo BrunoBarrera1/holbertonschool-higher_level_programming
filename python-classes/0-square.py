@@ -3,6 +3,8 @@
 this module defines a square class
 this square is an empty class that defines a square
 """
+
+
 class Square:
     """
     this class represents square
@@ -10,5 +12,3 @@ class Square:
     to include attributes and methods related to squares
     """
     pass
-
-
