@@ -18,10 +18,12 @@ class Square:
             return self.__size
 
         def size(self, value):
-            """set the size of square with validation
-            args: value int: new size to set
-            raises: typeerror if it is not an int
-            valueerror: if size is less than 0
+            """Set the size of the square with validation.
+            Args:
+            value (int): The new size to set.
+            Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
             """
         if size not isinstance(value, int):
             raise TypeError("size must be an integer")
