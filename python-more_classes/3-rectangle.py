@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-defines a class
+this module defines a class
 """
 
 
@@ -61,4 +61,3 @@ class Rectangle:
                         rectangle_str += "\n"
 
                 return rectangle_str
-
