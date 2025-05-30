@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-"""class that inherits the list"""
+"""
+is you ok now fam?
+"""
 
 
 class MyList(list):
+    """
+    will you pass now?
+    """
 
-    """MyList inherits list"""
     def print_sorted(self):
-        print(sorted(self))
+        """
+        do i have to say pls or something?
+        """
+        print(sorted(self))  
