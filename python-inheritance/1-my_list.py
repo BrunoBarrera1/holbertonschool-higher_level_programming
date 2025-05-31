@@ -1,16 +1,19 @@
 #!/usr/bin/python3
 """
-is you ok now fam?
+Module that contains the MyList class.
+This module provides a class that inherits from list
+with additional functionality.
 """
 
 
 class MyList(list):
     """
-    will you pass now?
+    MyList class that inherits from list.
+    This class extends the built-in list class with additional methods.
     """
-
     def print_sorted(self):
         """
-        do i have to say pls or something?
+        Prints the list sorted in ascending order.
+        All elements are assumed to be of type int.
         """
-        print(sorted(self))  
+        print(sorted(self))
