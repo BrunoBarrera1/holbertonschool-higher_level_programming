@@ -5,7 +5,8 @@ this block contains a function
 
 
 def write_file(filename="", text=""):
-    """this function will write the file"""
-    text = "hello world"
-    with open("example.txt,", "w") as file:
-        file.write(text)
+    """function that writes the file"""
+    text = "hello"
+    with open("example.txt", "w", encoding="utf-8") as f:
+        result = f.write("hello")
+        return(result)
