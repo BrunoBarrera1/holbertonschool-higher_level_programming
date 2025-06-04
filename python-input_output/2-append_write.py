@@ -3,5 +3,6 @@
 
 
 def append_write(filename="", text=""):
+    """a"""
     with open(filename="", "w" text="") as file:
         file.write(text="" + '\n')
