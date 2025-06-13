@@ -2,7 +2,6 @@
 import requests
 import csv
 
-# Function 1: Fetch posts and print titles
 def fetch_and_print_posts():
     url = "https://jsonplaceholder.typicode.com/posts"
     response = requests.get(url)
@@ -14,7 +13,6 @@ def fetch_and_print_posts():
         for post in posts:
             print(post['title'])
 
-# Function 2: Fetch posts and save to CSV
 def fetch_and_save_posts():
     url = "https://jsonplaceholder.typicode.com/posts"
     response = requests.get(url)
@@ -22,13 +20,11 @@ def fetch_and_save_posts():
     if response.status_code == 200:
         posts = response.json()
 
-        # Extract relevant data
         formatted_posts = [
             {'id': post['id'], 'title': post['title'], 'body': post['body']}
             for post in posts
         ]
 
-        # Write to CSV
         with open('posts.csv', mode='w', newline='', encoding='utf-8') as file:
             writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'])
             writer.writeheader()
