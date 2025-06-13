@@ -18,9 +18,9 @@ class pepe(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json")
             self.end_headers()
             data = {
-                    "name": "bruno",
-                    "age": "19",
-                    "city": "pinar"
+                    "name": "John",
+                    "age": "30",
+                    "city": "New York"
             }
             json_response = json.dumps(data)
             self.wfile.write(json_response.encode("utf-8"))
