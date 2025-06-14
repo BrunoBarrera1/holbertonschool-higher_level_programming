@@ -1,4 +1,4 @@
-#!/usr/bin/pyhon3
+#!/usr/bin/python3
 
 from flask import Flask, jsonify, request
 
@@ -12,11 +12,11 @@ def home():
 
 @app.route("/status")
 def status():
-    return "Ok"
+    return "OK"
 
 @app.route("/data")
 def get_usernames():
-    return jsonify(lists(users.jeys()))
+    return jsonify(list(users.keys()))
 
 @app.route("/users/<username>")
 def get_user(username):
