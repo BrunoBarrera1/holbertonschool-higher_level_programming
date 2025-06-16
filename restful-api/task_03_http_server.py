@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import requests
+import csv
 
 def fetch_and_print_posts():
     response = requests.get("https://jsonplaceholder.typicode.com/posts")
@@ -24,7 +25,7 @@ def fetch_and_save_posts():
             }
             filtered_posts.append(new_post)
 
-        with open('posts.csv', 'w', encoding='utf-8', newline=' ') as file:
+        with open('posts.csv', 'w', encoding='utf-8', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=filtered_posts[0].keys())
             writer.writeheader()
             writer.writerows(filtered_posts)
