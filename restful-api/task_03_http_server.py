@@ -41,9 +41,10 @@ class SimpleAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-Type", "text/plain")
             self.end_headers()
             self.wfile.write("Hello, this is a simple API!".encode("utf-8"))
+
     if __name__ == "__main__":
-    server_address = ('', 8000)
-    https = http.server.HTTPServer(server_address, SimpleAPIHandler)
+        server_address = ('', 8000)
+        https = http.server.HTTPServer(server_address, SimpleAPIHandler)
 
         print("Serving on port 8000...")
         httpd.serve_forever()
