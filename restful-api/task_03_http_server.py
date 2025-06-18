@@ -62,7 +62,7 @@ class SimpleAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("content-Type", "text/plain")
             self.end_headers()
-            self
+            self.wfile.write(b"Status OK")
             
         elif self.path == "/info":
             info = {
