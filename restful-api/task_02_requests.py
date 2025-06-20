@@ -2,6 +2,7 @@
 
 import requests
 import csv
+import jsonify
 
 def fetch_and_print_posts():
     response = requests.get("https://jsonplaceholder.typicode.com/posts")
