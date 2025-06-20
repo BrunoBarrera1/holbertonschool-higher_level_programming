@@ -4,9 +4,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-users = {
-        "jane": {"name": "jane", "age": 20, "city": "los angeles"}
-}
+users = {}
 
 @app.route("/")
 
