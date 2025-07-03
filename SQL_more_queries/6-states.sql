@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 -- Script to create the database hbtn_0d_usa and table states with constraints
+=======
+-- Script para crear la base de datos hbtn_0d_usa y la tabla states
+>>>>>>> f0382271a53fcd72acbab27632922f745edc7f2a
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
